@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>2 Database 数据系统设计 | Introduction</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.2.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./3 Web Crawler.html" />
+    
+    
+    <link rel="prev" href="./1 Introduce System Design.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="2" data-basepath="." data-revision="Sat Oct 17 2015 17:34:45 GMT+0800 (中国标准时间)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="1 Introduce System Design.html">
+            
+                
+                    <a href="./1 Introduce System Design.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        1 Introduce System Design 走进系统设计
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2" data-path="2 Database.html">
+            
+                
+                    <a href="./2 Database.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        2 Database 数据系统设计
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="3 Web Crawler.html">
+            
+                
+                    <a href="./3 Web Crawler.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        3 Web Crawler 爬虫系统设计
+                    </a>
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Introduction</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="2-database-%E6%95%B0%E6%8D%AE%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1">2 Database &#x6570;&#x636E;&#x7CFB;&#x7EDF;&#x8BBE;&#x8BA1;</h2>
+<h4 id="unique-key">Unique key</h4>
+<p>Novice, <a href="https://en.wikipedia.org/wiki/Unique_key#Defining_primary_keys" target="_blank">https://en.wikipedia.org/wiki/Unique_key#Defining_primary_keys</a>
+<br><br></p>
+<h4 id="create-read-update-and-delete">Create, read, update and delete</h4>
+<p>Novice, <a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">https://en.wikipedia.org/wiki/Create,_read,_update_and_delete</a>
+<br><br></p>
+<h4 id="%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81%E7%9A%84%E5%AD%98%E5%82%A8%E4%B8%8E-python-%E7%A4%BA%E4%BE%8B">&#x7528;&#x6237;&#x5BC6;&#x7801;&#x7684;&#x5B58;&#x50A8;&#x4E0E; Python &#x793A;&#x4F8B;</h4>
+<p>Expert, <a href="http://zhuoqiang.me/password-storage-and-python-example.html" target="_blank">http://zhuoqiang.me/password-storage-and-python-example.html</a></p>
+<h4 id="%E4%BA%92%E8%81%94%E7%BD%91%E7%BD%91%E7%AB%99%E5%BA%94%E8%AF%A5%E5%A6%82%E4%BD%95%E5%AD%98%E5%82%A8%E5%AF%86%E7%A0%81%EF%BC%9F">&#x4E92;&#x8054;&#x7F51;&#x7F51;&#x7AD9;&#x5E94;&#x8BE5;&#x5982;&#x4F55;&#x5B58;&#x50A8;&#x5BC6;&#x7801;&#xFF1F;</h4>
+<p>Expert, <a href="http://www.zhihu.com/question/20479856" target="_blank">http://www.zhihu.com/question/20479856</a>
+<br><br></p>
+<h4 id="web-%E6%8A%80%E8%A1%93%E4%B8%AD%E7%9A%84-session-%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F">Web &#x6280;&#x8853;&#x4E2D;&#x7684; Session &#x662F;&#x4EC0;&#x9EBC;&#xFF1F;</h4>
+<p>Novice, <a href="http://fred-zone.blogspot.com/2014/01/web-session.html" target="_blank">http://fred-zone.blogspot.com/2014/01/web-session.html</a></p>
+<h4 id="how-does-a-web-session-work">How does a web session work ?</h4>
+<p>Finally illustrated with diagrams
+Expert, <a href="http://machinesaredigging.com/2013/10/29/how-does-a-web-session-work/" target="_blank">http://machinesaredigging.com/2013/10/29/how-does-a-web-session-work/</a></p>
+<h4 id="cookie-session%E6%9C%BA%E5%88%B6%E8%AF%A6%E8%A7%A3">Cookie/Session&#x673A;&#x5236;&#x8BE6;&#x89E3;</h4>
+<p>Master, <a href="http://blog.csdn.net/fangaoxin/article/details/6952954" target="_blank">http://blog.csdn.net/fangaoxin/article/details/6952954</a>
+<br><br></p>
+<h4 id="c-%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%BB%A7%E6%89%BF">C++&#x7C7B;&#x548C;&#x5BF9;&#x8C61;&#x7684;&#x7EE7;&#x627F;</h4>
+<p>Novice, <a href="http://c.biancheng.net/cpp/biancheng/view/90.html" target="_blank">http://c.biancheng.net/cpp/biancheng/view/90.html</a></p>
+<h4 id="inheritance-in-c-vs-java">Inheritance In C++ Vs Java</h4>
+<p>Expert, <a href="http://www.go4expert.com/articles/inheritance-cpp-vs-java-t22245/" target="_blank">http://www.go4expert.com/articles/inheritance-cpp-vs-java-t22245/</a></p>
+<h4 id="diving-in-oop-day-2-polymorphism-and-inheritance-inheritance">Diving in OOP (Day 2): Polymorphism and Inheritance (Inheritance)</h4>
+<p>Master, <a href="http://www.codeproject.com/Articles/772238/Diving-in-OOP-Polymorphism-and-Inheritance-Part" target="_blank">http://www.codeproject.com/Articles/772238/Diving-in-OOP-Polymorphism-and-Inheritance-Part</a>
+<br><br></p>
+<h4 id="%E7%90%86%E8%A7%A3mysql%E2%80%94%E2%80%94%E7%B4%A2%E5%BC%95%E4%B8%8E%E4%BC%98%E5%8C%96">&#x7406;&#x89E3;MySQL&#x2014;&#x2014;&#x7D22;&#x5F15;&#x4E0E;&#x4F18;&#x5316;</h4>
+<p>Master, <a href="http://www.cnblogs.com/hustcat/archive/2009/10/28/1591648.html" target="_blank">http://www.cnblogs.com/hustcat/archive/2009/10/28/1591648.html</a>
+<br><br></p>
+<h4 id="%E6%B5%85%E8%B0%88%E7%AE%97%E6%B3%95%E5%92%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%887%EF%BC%89%EF%BC%9A%E4%BA%8C%E5%8F%89%E6%9F%A5%E6%89%BE%E6%A0%91">&#x6D45;&#x8C08;&#x7B97;&#x6CD5;&#x548C;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF08;7&#xFF09;&#xFF1A;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;</h4>
+<p>Expert, <a href="http://blog.jobbole.com/79305/" target="_blank">http://blog.jobbole.com/79305/</a>
+<br><br></p>
+<h4 id="%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9B%E9%98%B6%E7%B3%BB%E5%88%97%E4%B9%8B%E4%B8%80%EF%BC%9A%E6%BC%AB%E8%B0%88%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B4%A2%E5%BC%95">&#x6570;&#x636E;&#x5E93;&#x8FDB;&#x9636;&#x7CFB;&#x5217;&#x4E4B;&#x4E00;&#xFF1A;&#x6F2B;&#x8C08;&#x6570;&#x636E;&#x5E93;&#x7D22;&#x5F15;</h4>
+<p>Master, <a href="http://www.cnblogs.com/morvenhuang/archive/2009/03/30/1425534.html" target="_blank">http://www.cnblogs.com/morvenhuang/archive/2009/03/30/1425534.html</a></p>
+<h4 id="mysql%E7%B4%A2%E5%BC%95%E8%83%8C%E5%90%8E%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%8F%8A%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86">MySQL&#x7D22;&#x5F15;&#x80CC;&#x540E;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x53CA;&#x7B97;&#x6CD5;&#x539F;&#x7406;</h4>
+<p>Master, <a href="http://blog.codinglabs.org/articles/theory-of-mysql-index.html" target="_blank">http://blog.codinglabs.org/articles/theory-of-mysql-index.html</a></p>
+<h4 id="%E4%BB%8Eb%E6%A0%91%E3%80%81b-%E6%A0%91%E3%80%81b-%E6%A0%91%E8%B0%88%E5%88%B0r-%E6%A0%91">&#x4ECE;B&#x6811;&#x3001;B+&#x6811;&#x3001;B*&#x6811;&#x8C08;&#x5230;R &#x6811;</h4>
+<p>Master, <a href="http://blog.csdn.net/v_JULY_v/article/details/6530142" target="_blank">http://blog.csdn.net/v_JULY_v/article/details/6530142</a>
+<br><br></p>
+<h4 id="proper-sitting-posture-should-we-really-sit-for-8-hours">Proper Sitting Posture: Should we really sit for 8 hours?</h4>
+<p><a href="http://www.natural-solutions-for-muscle-pain.com/proper-sitting-posture.html" target="_blank">http://www.natural-solutions-for-muscle-pain.com/proper-sitting-posture.html</a>
+<br><br></p>
+<h4 id="%E4%B8%80%E4%B8%AA%E5%85%B8%E5%9E%8B%E6%94%AF%E4%BB%98%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0">&#x4E00;&#x4E2A;&#x5178;&#x578B;&#x652F;&#x4ED8;&#x7CFB;&#x7EDF;&#x7684;&#x8BBE;&#x8BA1;&#x4E0E;&#x5B9E;&#x73B0;</h4>
+<p>Expert, <a href="http://www.vimer.cn/2011/05/%E4%B8%80%E4%B8%AA%E5%85%B8%E5%9E%8B%E6%94%AF%E4%BB%98%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0.html" target="_blank">http://www.vimer.cn/2011/05/%E4%B8%80%E4%B8%AA%E5%85%B8%E5%9E%8B%E6%94%AF%E4%BB%98%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0.html</a>
+<br><br></p>
+<h4 id="database-transaction%E7%AC%AC%E4%B8%80%E8%A9%B1-acid">Database Transaction&#x7B2C;&#x4E00;&#x8A71;: ACID</h4>
+<p>Expert, <a href="http://karenten10-blog.logdown.com/posts/192629-database-transaction-1-acid" target="_blank">http://karenten10-blog.logdown.com/posts/192629-database-transaction-1-acid</a></p>
+<h4 id="%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%8B%E5%8A%A1%E5%A4%84%E7%90%86">&#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;&#x7684;&#x4E8B;&#x52A1;&#x5904;&#x7406;</h4>
+<p>Master, <a href="http://coolshell.cn/articles/10910.html" target="_blank">http://coolshell.cn/articles/10910.html</a></p>
+<h4 id="the-log-what-every-software-engineer-should-know-about-real-time-data-s-unifying-abstraction">The Log: What every software engineer should know about real-time data&apos;s unifying abstraction</h4>
+<p>Diamond, <a href="https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying" target="_blank">https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying</a>
+<br><br></p>
+<h4 id="introduction-to-cassandra-replication-and-consistency">Introduction to Cassandra: Replication and Consistency</h4>
+<p>Master, <a href="http://www.slideshare.net/benjaminblack/introduction-to-cassandra-replication-and-consistency" target="_blank">http://www.slideshare.net/benjaminblack/introduction-to-cassandra-replication-and-consistency</a></p>
+<h4 id="replication-durability-and-disaster-recovery">Replication, Durability, and Disaster Recovery</h4>
+<p>Master, <a href="http://www.slideshare.net/spf13/replication-durability-and-disaster-recovery" target="_blank">http://www.slideshare.net/spf13/replication-durability-and-disaster-recovery</a>
+<br><br></p>
+<h4 id="%E6%BC%AB%E8%B0%88%E4%BA%8B%E5%8A%A1%E5%92%8C%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1%EF%BC%882%EF%BC%89-%E6%95%B0%E6%8D%AE%E5%BA%93-acid-%E7%9A%84%E5%AE%9E%E7%8E%B0">&#x6F2B;&#x8C08;&#x4E8B;&#x52A1;&#x548C;&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;&#xFF08;2&#xFF09;- &#x6570;&#x636E;&#x5E93; ACID &#x7684;&#x5B9E;&#x73B0;</h4>
+<p>Novice, <a href="http://in355hz.iteye.com/blog/2029963" target="_blank">http://in355hz.iteye.com/blog/2029963</a></p>
+<h4 id="%E6%A6%82%E5%BF%B5%E7%90%86%E8%A7%A3%EF%BC%88cap-base-acid">&#x6982;&#x5FF5;&#x7406;&#x89E3;&#xFF08;CAP,BASE, ACID)</h4>
+<p>Master, <a href="http://blog.csdn.net/duxingxia356/article/details/43992015" target="_blank">http://blog.csdn.net/duxingxia356/article/details/43992015</a>
+<br><br></p>
+<h4 id="yy%E4%B8%80%E4%B8%8B%E5%BE%AE%E4%BF%A1%E7%BA%BF%E4%B8%8B%E6%94%AF%E4%BB%98%E7%9A%84%E5%9C%BA%E6%99%AF">YY&#x4E00;&#x4E0B;&#x5FAE;&#x4FE1;&#x7EBF;&#x4E0B;&#x652F;&#x4ED8;&#x7684;&#x573A;&#x666F;</h4>
+<p>Novice, <a href="http://www.cnblogs.com/aigongsi/p/3447013.html" target="_blank">http://www.cnblogs.com/aigongsi/p/3447013.html</a></p>
+<h4 id="%E4%B8%80%E4%B8%AA%E5%85%B8%E5%9E%8B%E6%94%AF%E4%BB%98%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0">&#x4E00;&#x4E2A;&#x5178;&#x578B;&#x652F;&#x4ED8;&#x7CFB;&#x7EDF;&#x7684;&#x8BBE;&#x8BA1;&#x4E0E;&#x5B9E;&#x73B0;</h4>
+<p>Expert, <a href="http://www.vimer.cn/2011/05/%E4%B8%80%E4%B8%AA%E5%85%B8%E5%9E%8B%E6%94%AF%E4%BB%98%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0.html" target="_blank">http://www.vimer.cn/2011/05/%E4%B8%80%E4%B8%AA%E5%85%B8%E5%9E%8B%E6%94%AF%E4%BB%98%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0.html</a></p>
+<h4 id="object-oriented-design-principles-and-the-5-ways-of-creating-solid-applications">Object-oriented design principles and the 5 ways of creating SOLID applications</h4>
+<p>Expert/Master, <a href="http://zeroturnaround.com/rebellabs/object-oriented-design-principles-and-the-5-ways-of-creating-solid-applications/" target="_blank">http://zeroturnaround.com/rebellabs/object-oriented-design-principles-and-the-5-ways-of-creating-solid-applications/</a>
+<br><br></p>
+<h4 id="%E5%A6%82%E4%BD%95%E8%AE%BE%E8%AE%A1paypal">&#x5982;&#x4F55;&#x8BBE;&#x8BA1;Paypal</h4>
+<p><a href="http://www.jiuzhang.com/qa/88/" target="_blank">http://www.jiuzhang.com/qa/88/</a>
+<br><br></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./1 Introduce System Design.html" class="navigation navigation-prev " aria-label="Previous page: 1 Introduce System Design 走进系统设计"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./3 Web Crawler.html" class="navigation navigation-next " aria-label="Next page: 3 Web Crawler 爬虫系统设计"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
